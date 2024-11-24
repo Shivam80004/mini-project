@@ -1,21 +1,28 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Display from './components/Display.jsx'
+import Features from './components/Features'
+import AllStates from './components/AllStates'
+import Map from './components/Map.jsx'
+import Hero from './components/Hero.jsx'
+import Footer from './components/Footer.jsx'
+import ImageGallery from './components/ImageGallery.jsx'
+import MapComponent from './components/MapComponent.jsx'
+import MapWithDirections from './components/MapWithDirections.jsx'
+import React, { useEffect } from 'react';
+import AnimatedSection from './components/AnimatedSection.jsx'
+
 
 function App() {
-  const [color, setColor] = useState("olive")
+
   return (
     <>
-      <div className = "w-full h-screen duration-200" style={{backgroundColor: color}}>
-            <div className= "fixed flex flex-wrap justify-center bottom-12 insert-x-0 px-1">
-                <div className= "flex flex-wrap justify-center gap-3 bg-white px-3 py-2 rounded-3xl">
-                   <button onClick={()=>{ setColor("red")}} className="outline-none px-4 py-1 rounded-full text-white" style={{backgroundColor: "red"}}>Red</button>
-                   <button onClick={()=>{ setColor("green")}}className="outline-none px-4 py-1 rounded-full text-white" style={{backgroundColor: "green"}}>green</button>
-                   <button onClick={()=>{ setColor("blue")}}className="outline-none px-4 py-1 rounded-full text-white" style={{backgroundColor: "blue"}}>blue</button>
-                </div>
-            </div>
-      </div>
+      <Hero />
+      <ImageGallery />
+      <Display/>
+      <Features />
+      <Footer/>
+      {/* <MapComponent /> */}
     </>
   )
 }
