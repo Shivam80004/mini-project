@@ -54,7 +54,7 @@ function Hero() {
               <ul className="flex flex-col md:flex-row md:space-x-6 mt-4 md:mt-0">
                 <li>
                   <a href="/" className="block text-black font-semibold py-2 px-4 hover:text-white">
-                    Home
+                    HHome
                   </a>
                 </li>
                 <li>
