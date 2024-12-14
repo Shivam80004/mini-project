@@ -54,8 +54,8 @@ function Display() {
     <>
       <div className='bg-sky-900 relative' >
         <div className='flex flex-col items-center justify-center'>
-          <h1 id="hd" className='text- font-rowdies text-white text-4xl md:text-7xl mt-28 mb-10'>Get Best Spritual Trip Guide</h1>
-          <div className='h-[30vh] w-[70vw] bg-sky-600 m-20 rounded-full border-4 flex flex-col items-center justify-center'>
+          <h1 id="hd" className='text- font-rowdies text-white text-center text-3xl md:text-7xl m-10 sm:mt-28 sm:mb-10'>Get Best Spritual Trip Guide</h1>
+          <div className='h-[30vh] w-[80vw] bg-sky-600 m-20 rounded-lg sm:rounded-full border-4 flex flex-col items-center justify-center'>
 
             {/* Search Logic Here  */}
           <div className='w-5/6 flex items-center justify-around'>

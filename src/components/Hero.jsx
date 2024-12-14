@@ -20,7 +20,7 @@ function Hero() {
     .from("#heading-1", { y: 50, opacity: 0 }, "-=0.4")
     .from("#subheading", { y: 50, opacity: 0 }, "-=0.4")
     
-
+    
     gsap.fromTo(
       gateRef.current,
       {
@@ -44,14 +44,14 @@ function Hero() {
 
     return(
         <>
-        <section>
+        <section className='h-[40vh] sm:h-full'>
         <header className="fixed top-0 z-10 inset-x-0 flex flex-wrap md:justify-start md:flex-nowrap w-full text-sm">
-      <nav className="mt-4 relative max-w-2xl backdrop-blur-sm bg-white/30 border border-black/30 rounded-[2rem] mx-2 py-2.5 md:flex md:items-center md:justify-between md:py-0 md:px-4 md:mx-auto dark:bg-neutral-900 dark:border-neutral-700">
+      <nav className="ml-14 mt-4 relative max-w-2xl backdrop-blur-sm bg-white/30 border border-black/30 rounded-[2rem] mx-2 py-2.5  md:py-0 md:px-4 md:mx-auto dark:bg-neutral-900 dark:border-neutral-700">
         
     
             {/* Navigation Links */}
             <div className={` md:flex md:items-center`}>
-              <ul className="flex flex-col md:flex-row md:space-x-6 mt-4 md:mt-0">
+              <ul className="flex md:flex-row md:space-x-6 mt-0 md:mt-0">
                 <li>
                   <a href="/" className="block text-black font-semibold py-2 px-4 hover:text-white">
                     Home
@@ -80,29 +80,29 @@ function Hero() {
         <img
         ref={gateRef}
         src={gate}
-        className="w-full h-full absolute top-0 z-10"
+        className="w-full sm:h-full h-[50%] absolute top-0 z-10"
         alt="Gate"
       />
     
     <section
   id="explore-section"
-  className="bg-white text-white min-h-screen pb-28 flex flex-col items-center justify-end text-center p-6"
+  className=" h-1/2 text-white sm:h-screen sm:pb-28 flex flex-col items-center justify-end text-center sm:p-6"
 >
   <h3
     id="heading-3"
-    className="text-gray-900 font-rowdies font-light text-4xl md:text-6xl mb-4"
+    className="text-gray-900 font-rowdies font-light text-3xl md:text-6xl sm:mb-4"
   >
     Explore India's Famous
   </h3>
   <h1
     id="heading-1"
-    className="text-gray-900 font-rowdies font-light text-4xl md:text-8xl mb-4"
+    className="text-gray-900 font-rowdies font-light text-2xl md:text-8xl sm:mb-4"
   >
     Hindu Temples
   </h1>
   <p
     id="subheading"
-    className="subheading text-white bg-sky-800 rounded-3xl p-2 pr-6 pl-6 mt-5 font-medium md:text-xl mb-6"
+    className="subheading text-white bg-sky-800 rounded-3xl sm:rounded-3xl p-2 pr-6 pl-6 mt-5 font-medium text-[10px] w-60 sm:w-[60vw] md:text-xl mb-6"
   >
     Uncover the Stories, Architecture and Significance of Hindu temples of
     India

@@ -64,7 +64,7 @@ function ImageGallery(){
         >
                 {
                 images.map((backgrounds, index)=>(
-                    <div key={index} className="h-[50vh] w-[180px] sm:h-[60vh] sm:w-[300px] bg-pink-200 border-2 rounded-full border-white flex-shrink-0">
+                    <div key={index} className="h-[30vh] w-[180px] sm:h-[60vh] sm:w-[300px] bg-pink-200 sm:border-2 rounded-full border-white flex-shrink-0">
                     <img 
                     src={backgrounds} 
                     className='w-full h-full border-8 rounded-full object-cover' />

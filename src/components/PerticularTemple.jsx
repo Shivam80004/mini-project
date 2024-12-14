@@ -87,7 +87,7 @@ function PerticularTemple(){
 
       {/* Text Area */}
             <h1 className="w-full text-2xl sm:text-6xl font-rowdies text-white bg-gradient-to-b from-sky-400 to-sky-950 fixed top-0 shadow-black shadow-xl text-center rounded-2xl p-5 z-10">{templeDetails.name}</h1>
-            <div id="hd" className="mx-20 p-10 rounded shadow-black shadow-lg bg-sky-950 text-white pt-32 sm:pt-36">{formatVisitingGuide(templeDetails.visiting_guide)}</div>
+            <div id="hd" className="sm:mx-20 p-6 sm:p-10 rounded shadow-black shadow-lg bg-sky-950 text-white pt-32 sm:pt-36">{formatVisitingGuide(templeDetails.visiting_guide)}</div>
     </div>
 
         

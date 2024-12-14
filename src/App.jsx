@@ -7,8 +7,6 @@ import Map from './components/Map.jsx'
 import Hero from './components/Hero.jsx'
 import Footer from './components/Footer.jsx'
 import ImageGallery from './components/ImageGallery.jsx'
-import MapComponent from './components/MapComponent.jsx'
-import MapWithDirections from './components/MapWithDirections.jsx'
 import React, { useEffect } from 'react';
 import AnimatedSection from './components/AnimatedSection.jsx'
 
@@ -22,7 +20,6 @@ function App() {
       <Display/>
       <Features />
       <Footer/>
-      {/* <MapComponent /> */}
     </>
   )
 }
